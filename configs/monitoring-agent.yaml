@@ -1,0 +1,30 @@
+# Security Monitoring Agent Configuration
+# Real-time threat detection and log analysis
+
+agent_name: security-monitor
+agent_description: Real-time security monitoring agent with log analysis, anomaly detection, and threat correlation
+version: 1.0.0
+
+# Agent configuration
+primary_agent_type: security_monitoring
+agent_framework: hybrid_langchain_custom
+architecture_pattern: single_agent
+
+# Target environments
+primary_targets:
+  - network_infrastructure
+  - web_applications
+
+# LLM configuration
+llm_provider: anthropic
+
+# Output formats
+report_formats:
+  - json
+  - html
+
+# Deployment
+deployment_target: kubernetes
+
+# Security
+api_key_management: kubernetes_secrets

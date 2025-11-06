@@ -1,0 +1,32 @@
+# Red Team Simulation Agent Configuration
+# Advanced adversary emulation
+
+agent_name: red-team-simulator
+agent_description: Multi-agent red team simulation with attack path planning, exploitation, and lateral movement capabilities
+version: 1.0.0
+
+# Agent configuration
+primary_agent_type: red_team_simulation
+agent_framework: crewai
+architecture_pattern: multi_agent_sequential
+
+# Target environments
+primary_targets:
+  - network_infrastructure
+  - web_applications
+  - cloud_environments
+
+# LLM configuration
+llm_provider: anthropic
+
+# Output formats
+report_formats:
+  - json
+  - pdf
+  - markdown
+
+# Deployment
+deployment_target: docker_compose
+
+# Security
+api_key_management: vault

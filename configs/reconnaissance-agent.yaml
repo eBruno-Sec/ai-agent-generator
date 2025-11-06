@@ -1,0 +1,32 @@
+# Reconnaissance Agent Configuration
+# Bug bounty and security research focused
+
+agent_name: recon-master
+agent_description: Advanced reconnaissance agent for bug bounty programs with subdomain enumeration, port scanning, and OSINT capabilities
+version: 1.0.0
+
+# Agent configuration
+primary_agent_type: reconnaissance
+agent_framework: hybrid_langchain_custom
+architecture_pattern: single_agent
+
+# Target environments
+primary_targets:
+  - web_applications
+  - network_infrastructure
+  - api_endpoints
+
+# LLM configuration
+llm_provider: anthropic
+
+# Output formats
+report_formats:
+  - json
+  - html
+  - markdown
+
+# Deployment
+deployment_target: docker
+
+# Security
+api_key_management: env_variables
